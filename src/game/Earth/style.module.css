@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Poppins:wght@300&display=swap');
+.container{
+    @apply flex justify-center items-center w-full h-[850px] bg-white;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+.game{
+    @apply flex flex-col w-[550px] h-[725px] bg-[#ebddb3] rounded-2xl;
+}
+.cookieHold{
+    @apply flex w-[550px] h-[550px] items-center justify-center;
+}
+.cookie{
+    @apply h-[220px]
+}
+.count{
+    @apply flex justify-center font-[Poppins] text-4xl mt-[30px];
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        flex: none
+    }
+    .game{
+        @apply w-full h-[100vh] mt-none 
+    }
+    .cookieHold{
+        @apply flex w-full items-center justify-center;
+    }
+    .cookie{
+        @apply h-[110px]
+    }
+  }
