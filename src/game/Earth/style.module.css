@@ -21,10 +21,10 @@
 }
 @media only screen and (max-width: 768px) {
     .container{
-        flex: none
+        @apply justify-start items-start
     }
     .game{
-        @apply w-full h-[100vh] mt-none 
+        @apply w-full h-[100vh]
     }
     .cookieHold{
         @apply flex w-full items-center justify-center;
